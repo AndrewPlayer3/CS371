@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=2in, right=2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{verbatim}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{\@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+% \newcommand{includematlab}[1]{\verbatiminput{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\title{Quiz 5}
+\author{Andrew Player}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{exercise}{Question \# 1}
+\end{exercise}
+\noindent
+For the most part, I was taught these ethics growing up. The only parts that 
+I was not taught are the computing specific ones. For example, I was not taught
+to acknowledge that all people are stakeholders in computing. I was also not 
+explicitly told that I should contribute to society and human well being. 
+
+
+\begin{exercise}{Question \# 2}
+\end{exercise}
+\noindent
+"Privacy in Public" refers to the problem of protecting public personal information.
+For the most part, there is no legal protection for what is considered public personal
+information, even though some people would not want that information just given away. For
+example, the things that you purchase in a store, or online, are considered PPI, but you 
+may not want people to see what you are buying. There are many other situations where you
+would want "public" information kept relatively private, but since there are no protections
+for this information, it may be passed around without your explicit permission. That is the problem.
+
+\begin{exercise}{Question \# 3}
+\end{exercise}
+\noindent
+The US government uses several controversial survailence techniques. For example, they have means to
+intercept and read emails of US citizens. They also have to ability to get the searches 
+made by US citizens on certain search engines. These are considered controversial as there is almost
+zero accountability for the governments use and gathering of peoples' data. Many people 
+believe that the government shouldn't have access to any "online" data without having a warrant, 
+like if the data was on paper, as it could be considered a violation of the 4th Amendment. 
+\newline 
+
+\begin{exercise}{Question \# 4}
+\end{exercise}
+\noindent
+James Moor connects these by saying that an individual only has privacy if 
+they are protect from intrusion, interference, and information access by others 
+in that situation. Moor means "situation" in a very broad sense, where it refers
+to any context where the idea of privacy can be applied. He then further differentiates
+situations into naturally private situations and normatively private situations.
+Naturally private situations are those where individuals are protected by natural things, 
+such as being alone in the woods. Normatively private situations are those where
+people are protected by "norms" such as laws, policies, and other social constructs.
+
+\end{document}

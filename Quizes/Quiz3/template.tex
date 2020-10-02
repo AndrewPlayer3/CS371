@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=2in, right=2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{verbatim}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{\@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+% \newcommand{includematlab}[1]{\verbatiminput{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\title{Quiz 3}
+\author{Andrew Player}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{exercise}{Question \# 1}
+\end{exercise}
+\noindent
+A counterexample is something that is used to show that an arguement
+is invalid. It is a case, which is logically possible, where the 
+conclusion of the arguement is not garunteed to be true, while the 
+assumptions are be true. Since you cannot gaurentee the conclusion 
+to be true given true assumptions, the arguement is invalid.
+
+
+\begin{exercise}{Question \# 2}
+\end{exercise}
+\noindent
+An inductive argument may be invalid, as it does not gaurentee the 
+truth of its conclusion, but instead it provides a high probability 
+of truth. This is in contrast to a fallacious argument where the 
+conclusion cannot be guarenteed to be true, nor is it likely to be 
+true. Heres an example of an inductive argument: Every time I have
+torrented something from Pirate Bay, nothing has happened; so next
+time I torrent something from Pirate Bay, nothing will happen. 
+Here's an example of a fallacious argument: My friend, who is a 
+doctor, said that masks don't help to slow the spread of COVID, so 
+masks don't help slow the spread of COVID.
+
+\begin{exercise}{Question \# 3}
+\end{exercise}
+\noindent
+The Appeal to Authority is a logical fallacy. It involves asserting 
+that a claim is true because an authority on the topic said that it 
+was true. It is a fallacy because they lack any supporting evidence 
+other than the claim made by the authority. Here's an example:
+John McAfee knows a lot about computers and cybersecurity, and 
+he said Bitcoin will reach \$100,000 by the end of 2020, so that
+must be true.
+\newline
+\newline
+\newline
+\newline
+ 
+\begin{exercise}{Question \# 4}
+\end{exercise}
+\noindent
+I read two sub-sections: ligatures and math symbols. This is what I
+learned. Ligatures first came about since metal cast fonts would have
+collisions between certain characters, so they simply made combined 
+characters that fixed that issue. And now, we don't really need 
+ligatures so they are largely a stylistic choice. Additionally, I 
+learned that it is improper to use x for multiplication and that it 
+is better to insert the proper characters for equations.
+
+\end{document}
