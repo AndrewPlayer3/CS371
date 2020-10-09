@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=2in, right=2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{verbatim}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{\@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+% \newcommand{includematlab}[1]{\verbatiminput{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\title{Quiz 6}
+\author{Andrew Player}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{exercise}{Question \# 1}
+\end{exercise}
+\noindent
+While it does not make much sense to apply this to the game I am making for this class, I am
+making a steganography application for my security class project which is easier to apply this to.
+I could add tutorial and learning section to the application that teaches people about what it does
+and how it does it, along with information on stenography and cryptography, in general, that could
+help some people learn about cybersecurity. If the application was going out to the public, it could
+definitely help foster learning for its users.
+
+
+\begin{exercise}{Question \# 2}
+\end{exercise}
+\noindent
+I do believe that it is possible to make a hacker's code of ethics that does not engage in 
+moral relativism. Moral Relativism states that "moral judgments are true or false only relative
+to some particular standpoint." And it is possible to establish ethics that are not necessarily
+specific to the technological world. For example, a rule such as "Never instigate" would apply well 
+to the hacker world, while it is also an ethic that is not relative to the hacker world and can be 
+applied to anything.
+
+\begin{exercise}{Question \# 3}
+\end{exercise}
+\noindent
+Cyberterrorism is the act of commiting terrorism within "cyberspace", i.e. over the internet
+or on local computer networks. Terrorism in this sense is some action meant to harm or inspire
+fear again some group of people, such as a company or government, for some type of gain (usually political). 
+One example of this would be to hack into some critical infrastructure, such as a powerplant, and take 
+control of it. 
+\newline 
+
+\begin{exercise}{Question \# 4}
+\end{exercise}
+\noindent
+Cybersecurity issues and technological privacy issues connected in many ways. The more data
+companies collect, the more data that hackers could steal. The less privacy we have on the internet
+the more vulnerable we are to lose important information to hackers. 
+
+\end{document}
